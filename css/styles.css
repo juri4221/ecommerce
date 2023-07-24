@@ -1,3 +1,77 @@
-body{
-    background: gold;
-}
+   .navbar {
+    background-color: #f7f6ef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: Poppins, sans-serif;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    border-bottom: 0.001rem solid rgb(187, 180, 180);
+  }
+
+  .navbar-left {
+    position: relative;
+    left: 20rem;
+    flex: 1;
+    text-align: left;
+  }
+
+  .navbar-center {
+    flex: 2;
+    text-align: center;
+  }
+
+  .navbar-right {
+    flex: 1;
+    text-align: right;
+    position: relative;
+    right: 15rem;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: black;
+  }
+
+  .header {
+    background-color: #fff; /* White background */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow for a raised effect */
+  }
+
+  .phone-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .header-text {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 20rem;
+  }
+
+  .search-area {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ffd700; /* Gold border */
+    padding: 5px 10px;
+    margin-left: auto; /* Pushes the search area to the right */
+  }
+
+  .search-icon {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #ffd700; /* Gold color for the search icon */
+  }
+
+  .like-icon, .cart-icon {
+    font-size: 24px;
+    margin-left: 10px;
+    color: #ffd700; /* Gold color for the like and cart icons */
+  }
