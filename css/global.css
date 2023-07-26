@@ -1,35 +1,38 @@
-html {
-    height: 100%;
+html, body {
+    height: 100vh;
 }
 
 body{
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    /* min-height: 100vh; */
+    overflow-y: auto;
+
 }
 
 .header {       
     width: 100%;
-    background-color: yellow; /* White background */
+    background-color: yellow; 
     display: flex;
     justify-content: center;
 }
 
 .header-container {    
-    width: 100%;
+    width: 100%;    
     max-width: 1000px;
-    background-color: orange; /* White background */
+    background-color: orange; 
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 .shoping-info {    
-    height: 30px;
-    width: 400px;
+    text-transform: uppercase;
     background: purple;
 }
+
   
 .navigation-bar {
     background-color: greenyellow;
@@ -44,15 +47,12 @@ body{
 }
 
 .content {
-    width: 100%;
-    flex: 1;
-    background-color: red;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    background-color: red;     
 }
 
 .content-container{
-    height: 30px;
     width: 100%;
     max-width: 1000px;
     background-color: rgb(53, 52, 41);
@@ -76,9 +76,18 @@ body{
 }
     
 .page-content-header-actions{
-    height: 30px;
-    width: 170px;
+    display: flex;
+    position: relative;
+    gap: 10px;
     background-color: aquamarine;
+}
+
+.page-content-header-search-box{
+
+}
+
+.page-content-header-action-item{
+
 }
 
 .page-content-navigation{
@@ -243,3 +252,12 @@ body{
     background-color: grey;
 }
 
+.shopping-cart-widget{
+    display: none;
+    width: 200px;
+    height: 300px;
+    position:absolute;
+    top: 35px;
+    right: 0;
+    background-color: black;
+}
