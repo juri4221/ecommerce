@@ -203,20 +203,60 @@ body{
 .subscribe-section {
     width: 100%;
     display: flex;
-    background-color: black;
+    background-color: rgb(143, 212, 13);
     justify-content: space-between;
 }
 
 .subscribe-section-title{
+    
     width: 250px;
     height: 50px;
     background: pink;
 }
 
 .subscribe-section-email-input{
-    width: 250px;
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 22px;
+
+      /* padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px; */
+
+    /* width: 250px;
     height: 50px;
-    background: darkkhaki;
+    background: darkkhaki; */
+}
+
+.subscribe-button {
+    width: 116px;
+    position: absolute; /* Position the button relative to the input container */
+    top: 0;
+    left: 238px;
+    right: -11px;
+    padding: 5px 10px;
+    background-color: black; /* Customize the background color for the button */
+    color: #fff;
+    border: none;
+    border-radius: 18px; /* Border radius on the right side only */
+    cursor: pointer;
+  }
+
+.subscribe-container {
+
+    display: flex; /* Use flexbox to place elements in the same line */
+      align-items: center;
+    /* padding: 5px 10px;
+    border: none;
+    border-radius: 3px; */
+}
+
+.email-input-container{
+    height: 27px;
+    left: -11px;
+    position: relative; /* To contain the input and button within the same container */
+      flex: 1; /* Allow the input to take up the available space */
 }
 
 .footer-navigation {
