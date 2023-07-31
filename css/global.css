@@ -242,7 +242,7 @@ body{
 .subscribe-section {
     width: 100%;
     display: flex;
-    background-color: black;
+    background-color: rgb(143, 212, 13);
     justify-content: space-between;
 }
 
