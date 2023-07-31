@@ -4,13 +4,17 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
-      <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/icons/all.css">
+    <link rel="stylesheet" href="css/global.css">
   </head>
   <body>        
       <header class="header">
         <div class="header-container">
-          <p class="shoping-info">Free shipping for all orders <strong style=>$200</strong></p>
+          <p class="shopping-info">Free shipping for all orders <strong style=>$200</strong></p>
           <div class="navigation-bar">
             <div class="navigation-item"></div>
             <div class="navigation-item"></div>
@@ -22,11 +26,32 @@
       <main class="content">
         <div class="content-container">
           <div class="page-content-header">
-            <div class="page-content-header-contact"></div>
+            <div class="page-content-header-contact">
+              <i class="fa-solid fa-phone fa-2x"></i>
+              <span>Need some help ?
+                +35566666666
+              </span>
+            </div>
             <div class="page-content-header-actions">
+              <div class="search-box">
               <input type="text" placeholder="Search products" class="page-content-header-search-box">
-              <button class="page-content-header-action-item">Like</button>
-              <button class="page-content-header-action-item" onclick="onclickShoppingCart()">Shopping</button>
+              </div>
+              <div class="page-content-header-action-item-search">
+                <button>
+                  <i class="fa-solid fa-search"></i>
+                </button>
+              </div>
+              <div class="page-content-header-action-item">
+                <button>
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+                <span>2</span>
+              </div>
+              <div class="page-content-header-action-item shopping-button">
+                <button onclick="onclickShoppingCart()">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
               <div id="shoppingCartWidget" class="shopping-cart-widget"></div>
             </div>
           </div>
@@ -102,13 +127,13 @@
         <div class="footer-container">
           <div class="subscribe-section">
           <div class="subscribe-section-title"></div>
-          <div class="subscribe-container">
-            <div class="email-input-container">
-            <input type="email" class="subscribe-section-email-input" placeholder="Enter email adress">
-              <button class="subscribe-button">Subscribe</button>
-            </input>
-          </div>
-          </div>          
+            <div class="subscribe-container">
+              <div class="email-input-container">
+                <input type="email" class="subscribe-section-email-input" placeholder="Enter email address">
+                <button class="subscribe-button">Subscribe</button>
+                </input>
+              </div>
+            </div>
           </div>
           <div class="footer-navigation">
             <div class="footer-navigation-item"></div>

@@ -9,7 +9,7 @@ body{
     flex-direction: column;
     /* min-height: 100vh; */
     overflow-y: auto;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 .header {       
@@ -28,7 +28,7 @@ body{
     justify-content: space-between;
 }
 
-.shoping-info {    
+.shopping-info {
     text-transform: uppercase;
     background: purple;
 }
@@ -59,7 +59,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: 20px;
 }
 
 .page-content-header{
@@ -71,23 +70,63 @@ body{
 
 .page-content-header-contact{
     height: 30px;
-    width: 170px;
+    width: 181px;
+    display: flex;
+    align-items: center;
     background-color: blueviolet;
 }
     
 .page-content-header-actions{
+    padding-right: 25px;
     display: flex;
+    align-items: center;
     position: relative;
-    gap: 10px;
+    gap: 35px;
     background-color: aquamarine;
 }
 
 .page-content-header-search-box{
+    width: 268px;
+    margin-left: 81px;
+    height: 25px;
+}
 
+.search-box{
+    left:40px;
+}
+
+.page-content-header-action-item-search{
+    margin-left: -70px;
+    left: 40px;
+}
+
+.page-content-header-actions button{
+    border: none;
+    background-color: transparent;
+}
+
+.page-content-header-action-item button{
+    border: none;
+    background-color: transparent;
 }
 
 .page-content-header-action-item{
+    position: relative;
+}
 
+.page-content-header-action-item span{
+    min-width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gold;
+    border-radius: 20px;
+    font-size: 11px;
+    padding: 2px;
+    position: absolute;
+    top: 12px;
+    right: -12px;
 }
 
 .page-content-navigation{
@@ -262,21 +301,21 @@ h1{
 }
 
 .subscribe-section-title{
-    
     width: 250px;
     height: 50px;
     background: pink;
+    display: flex;
 }
 
 .subscribe-section-email-input{
-      width: 100%;
-      padding: 5px;
-      border: 1px solid #ccc;
-      border-radius: 22px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 22px;
 
-      /* padding: 5px;
-      border: 1px solid #ccc;
-      border-radius: 3px; */
+    /* padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px; */
 
     /* width: 250px;
     height: 50px;
@@ -287,30 +326,31 @@ h1{
     width: 116px;
     position: absolute; /* Position the button relative to the input container */
     top: 0;
-    left: 238px;
-    right: -11px;
-    padding: 5px 10px;
+    left: 282px;
+    right: -1px;
+    padding: 8px 10px;
     background-color: black; /* Customize the background color for the button */
     color: #fff;
     border: none;
     border-radius: 18px; /* Border radius on the right side only */
     cursor: pointer;
-  }
+}
 
 .subscribe-container {
 
     display: flex; /* Use flexbox to place elements in the same line */
-      align-items: center;
+    align-items: center;
     /* padding: 5px 10px;
     border: none;
     border-radius: 3px; */
 }
 
 .email-input-container{
-    height: 27px;
-    left: -11px;
+    width: 384px;
+    height: 29px;
+    left: -14px;
     position: relative; /* To contain the input and button within the same container */
-      flex: 1; /* Allow the input to take up the available space */
+    flex: 1; /* Allow the input to take up the available space */
 }
 
 .footer-navigation {
