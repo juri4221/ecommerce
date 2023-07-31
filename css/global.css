@@ -12,6 +12,17 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+button {
+    width: 116px;
+    height: 30px;
+    padding: 8px 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    font-size: 12px;
+}
+
 .header {       
     width: 100%;
     background-color: yellow; 
@@ -101,11 +112,15 @@ body{
 }
 
 .page-content-header-actions button{
+    width: unset;
+    color: black;
     border: none;
     background-color: transparent;
 }
 
 .page-content-header-action-item button{
+    width: unset;
+    color: black;
     border: none;
     background-color: transparent;
 }
@@ -222,25 +237,35 @@ body{
 .shop-actions-item{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     flex: 1;
     position: relative;
     background-color: white;
     background-image: url("https://placehold.co/400x400");
-    height: 155px;
-    background-position: center;
+    height: 200px;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 130%;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.shop-actions-item h1, h2{
+.shop-actions-container{
+    width: 220px;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.shop-actions-container button{
+    margin-top: 16px;
+}
+
+.shop-actions-container h1, h2{
     margin: 0;
 }
 
 h2{
-    margin-top: 30px;
-    margin-left: 30px;
     font-size: 15px;
 }
 
@@ -287,7 +312,7 @@ h1{
 .footer-container {
     width: 100%;
     max-width: 1000px;
-    background-color: orange; /* White background */
+    background-color: orange;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -298,6 +323,7 @@ h1{
     display: flex;
     background-color: rgb(143, 212, 13);
     justify-content: space-between;
+    align-items: center;
 }
 
 .subscribe-section-title{
@@ -307,50 +333,25 @@ h1{
     display: flex;
 }
 
-.subscribe-section-email-input{
-    width: 100%;
-    padding: 5px;
+.subscribe-container {
+    height: 30px;
+    display: flex;
+    align-items: center;
     border: 1px solid #ccc;
     border-radius: 22px;
-
-    /* padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px; */
-
-    /* width: 250px;
-    height: 50px;
-    background: darkkhaki; */
+    background-color: white;
+    overflow: hidden;
 }
 
-.subscribe-button {
-    width: 116px;
-    position: absolute; /* Position the button relative to the input container */
-    top: 0;
-    left: 282px;
-    right: -1px;
-    padding: 8px 10px;
-    background-color: black; /* Customize the background color for the button */
-    color: #fff;
+.subscribe-email-input{
     border: none;
-    border-radius: 18px; /* Border radius on the right side only */
-    cursor: pointer;
+    width: 100%;
+    font-size: 12px;
+    padding: 5px 5px 5px 18px;
 }
 
-.subscribe-container {
-
-    display: flex; /* Use flexbox to place elements in the same line */
-    align-items: center;
-    /* padding: 5px 10px;
-    border: none;
-    border-radius: 3px; */
-}
-
-.email-input-container{
-    width: 384px;
-    height: 29px;
-    left: -14px;
-    position: relative; /* To contain the input and button within the same container */
-    flex: 1; /* Allow the input to take up the available space */
+.subscribe-email-input:focus{
+    outline: none;
 }
 
 .footer-navigation {
