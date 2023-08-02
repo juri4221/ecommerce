@@ -28,14 +28,15 @@ button {
     height: 48px;
     display: flex;
     justify-content: center;
-    background-color: #f3feff;;
+    background-color: #F9F9F9;;
 
 }
 
 .header-container {
     width: 100%;
+    height: 45px;
     padding: 0 16px;
-    max-width: 1000px;
+    max-width: 1174px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,16 +60,33 @@ button {
 
 .content {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9F9F9;
 }
 
 .content-container{
     width: 100%;
-    padding: 0 16px;
-    max-width: 1000px;
+    padding: 24px  16px;
+    max-width: 1174px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.page-content-info{
+    width: 100%;
+    height: 174px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.page-content-info-container{
+    width: 100%;
+    max-width: 1174px;
+    padding: 0 16px;
 }
 
 .page-content-header{
@@ -76,12 +94,12 @@ button {
     height: 50px;
     display: flex;
     justify-content: space-between;
-    margin-top: 24px;
+    margin-bottom: 32px;
 }
 
 .page-content-header-contact{
     flex: 1;
-    padding-right: 40px;
+    padding-right: 116px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -102,7 +120,7 @@ button {
 
 .search-box{
     overflow: hidden;
-    border: 1px solid gold;
+    border: 2px solid gold;
     border-radius: 40px;
 }
 
@@ -147,6 +165,63 @@ button {
     margin: 8px 0 0;
 }
 
+.shopping-cart-widget{
+    display: none;
+    width: 360px;
+    height: 528px;
+    border-top: 2px solid #FAD100;
+    position:absolute;
+    top: 49px;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.shopping-cart-container{
+    width: 100%;
+    height: 500px;
+}
+.shopping-cart-bought{
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid #EBEBEB ;
+    display: flex;
+}
+
+.shopping-cart-bought img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    flex: 1;
+    
+}
+
+.shopping-card-bought-details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 8px;
+    flex: 1;
+}
+
+.shopping-cart-calculation{
+    width: 100%;
+    height: 30px;
+}
+.shopping-cart-calculation-actions{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.shopping-cart-calculation-prices{
+    width: 100%;
+    height: 30px;
+}
+
 .page-content-header-action-item span{
     min-width: 20px;
     height: 20px;
@@ -169,18 +244,20 @@ button {
 }
 
 .page-content-navigation-department{
-    height: 50px;
-    width: 220px;
+    height: 60px;
+    width: 270px;
     background-color: #FAD234;
-    border-top-right-radius: 13px;
-    border-top-left-radius: 13px;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
 }
 
 .page-content-department{
+    font-size: 15px;
+    font-weight: bold;
     display: flex;
-    margin-left: 5px;
-    margin-top: 18px;
-    justify-content: space-evenly;
+    margin-left: 16px;
+    margin-top: 22px;
+    justify-content: flex-start;
 }
 
 .page-content-navigation-bar{
@@ -194,7 +271,7 @@ button {
 }
 
 .page-content-ads{
-    gap: 20px;
+    gap: 30px;
     display: flex;
     justify-content: space-around;
 }
@@ -208,7 +285,7 @@ button {
     position: relative;
     background-color: white;
     background-image: url("https://placehold.co/600x400");
-    height: 420px;
+    height: 620px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -232,7 +309,7 @@ button {
     margin-top: 20px;
     font-size: 30px;
     font-weight: bold;
-    color: red;
+    color: #CD131C;
 }
     
 
@@ -272,7 +349,7 @@ button {
 }
 
 .shop-actions{
-    gap: 20px;
+    gap: 30px;
     display: flex;
     justify-content: space-around;
 }
@@ -320,7 +397,7 @@ h1{
 .shop-actions-categories{
     width: 100%;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-direction: column;
     align-items: center;
     background-color: rgb(102, 20, 255);
@@ -335,7 +412,7 @@ h1{
 .shop-actions-categories-container{
     width: 100%;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     background-color: gray;
 }
 
@@ -355,7 +432,7 @@ h1{
 
 .footer-container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1174px;
     padding: 0 16px;
     display: flex;
     justify-content: space-between;
@@ -374,7 +451,7 @@ h1{
 .subscribe-section-container{
     width: 100%;
     padding: 0 16px;
-    max-width: 1000px;
+    max-width: 1174px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -412,7 +489,7 @@ h1{
     background-color:green;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 30px;
 }
 
 .footer-navigation-item {
@@ -440,13 +517,3 @@ h1{
     background-color: grey;
 }
 
-.shopping-cart-widget{
-    display: none;
-    width: 200px;
-    height: 300px;
-    position:absolute;
-    top: 48px;
-    right: 0;
-    background-color: black;
-    z-index: 1;
-}
