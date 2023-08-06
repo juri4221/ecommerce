@@ -28,7 +28,7 @@
           <div class="page-content-info-container">
           <div class="page-content-header">
             <div class="page-content-header-contact">
-              <i class="fa-solid fa-phone fa-2x"></i>
+              <i class="fa-solid fa-phone"></i>
               <span>
                 Need help?<br>+355444444446
               </span>
@@ -54,26 +54,41 @@
               <p class="shopping-cart-total-price">$54.90</p>
               <div id="shoppingCartWidget" class="shopping-cart-widget">
                 <div class="shopping-cart-container">
-                  <div class="shopping-cart-bought">
-                    <img src="/images/komodine-me-dru-teak.jpg" alt="">
-                    <div class="shopping-card-bought-details">
-                      <span>Vulputate justo</span>
-                      <span>Qty 1</span>
-                      <span>$90.00</span>
+                  <div class="shopping-cart-items">
+                    <div class="shopping-cart-item">
+                      <img src="/images/komodine-me-dru-teak.jpg" alt="">
+                      <div class="shopping-card-bought-details">
+                        <span>Vulputate justo</span>
+                        <span>Qty 1</span>
+                        <span>$90.00</span>
+                      </div>
+                      <button>x</button>
                     </div>
-                    <button>x</button>
-                  </div>
-                  <div class="shopping-cart-bought"></div>
-                  <div class="shopping-cart-calculation">
-                    <div class="shopping-cart-calculation-actions">
-                      <span>Subtotal</span>
-                      <span>Shipping</span>
-                      <span>Taxes</span>
-                      <span>Total</span>
+                    <div class="shopping-cart-item">
+                      <img src="/images/komodine-me-dru-teak.jpg" alt="">
+                      <div class="shopping-card-bought-details">
+                        <span>Phasellus ven enderit</span>
+                        <span>Qty 1</span>
+                        <span>$55.00</span>
+                      </div>
+                      <button>x</button>
                     </div>
-                    <div class="shopping-cart-calculation-prices"></div>
+                    <div class="shopping-cart-total">
+                      <div class="shopping-cart-total-actions">
+                        <span>Subtotal</span>
+                        <span>Shipping</span>
+                        <span>Taxes</span>
+                        <span>Total</span>
+                      </div>
+                      <div class="shopping-cart-total-prices">
+                        <span>$145.00</span>
+                        <span>$7.00</span>
+                        <span>$0.00</span>
+                        <span>$152.00</span>
+                      </div>
+                    </div>
                   </div>
-                  <button>CHECKOUT</button>
+                  <button class="shopping-cart-checkout-button">CHECKOUT</button>
                 </div>
               </div>
             </div>
@@ -83,7 +98,7 @@
               <p class="page-content-department"><i class="fa-solid fa-list"></i>All Department</p>
             </div>
             <div class="page-content-navigation-bar">
-              <div class="page-content-navigation-bar-items">HOME <i class="fa-solid fa-chevron-down"></i></div>
+              <div class="page-content-navigation-bar-items selected">HOME <i class="fa-solid fa-chevron-down"></i></div>
               <div class="page-content-navigation-bar-items">SHOP <i class="fa-solid fa-chevron-down"></i></div>
               <div class="page-content-navigation-bar-items">BLOG <i class="fa-solid fa-chevron-down"></i></div>
               <div class="page-content-navigation-bar-items">PAGES <i class="fa-solid fa-chevron-down"></i></div>
@@ -152,12 +167,192 @@
             </div>
           </div>
           <div class="shop-actions-categories">
-            <div class="shop-actions-categories-title"></div>
+            <h1 class="shop-actions-categories-title">
+              Deal Of The Week
+            </h1>
+            <div class="shop-actions-categories-title-separator">
+            </div>
             <div class="shop-actions-categories-container">
-              <div class="shop-actions-product"></div>
-              <div class="shop-actions-product"></div>
-              <div class="shop-actions-product"></div>
-              <div class="shop-actions-product"></div>
+              <div class="shop-actions-product">
+                <div class="shop-actions-product-image-container">
+                  <img src="/images/couch.jpeg"/>
+                </div>
+                <div class="shop-actions-product-container">
+                  <div class="price-discount">
+                    <span>$70.00</span>
+                    <span>$80.00</span>
+                  </div>
+                  <p>Divan blu dyvendesh</p>
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="product-inventory">
+                    <span>Available: 369</span>
+                    <span>Unit Sold: 56</span>
+                    <div class="product-inventory-bar">
+                      <div class="product-inventory-bar-able">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="discount-left-time">
+                    <div class="discount-left-time-specific">
+                      <span>559</span>
+                      <span>DAYS</span>
+                    </div>
+                    <div class="discount-left-time-specific">
+                      <span>13</span>
+                      <span>HRS</span>
+                    </div>
+                    <div class="discount-left-time-specific">
+                      <span>56</span>
+                      <span>MINS</span>
+                    </div>
+                    <div class="discount-left-time-specific">
+                      <span>30</span>
+                      <span>SECS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shop-actions-product">
+                <div class="shop-actions-product-image-container">
+                  <img src="/images/couch.jpeg"/>
+                </div>
+                <div class="shop-actions-product-container">
+                  <div class="price-discount">
+                    <span>$70.00</span>
+                    <span>$80.00</span>
+                  </div>
+                  <p>Divan blu dyvendesh</p>
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="product-inventory">
+                    <span>Available: 369</span>
+                    <span>Unit Sold: 56</span>
+                    <div class="product-inventory-bar">
+                      <div class="product-inventory-bar-able">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="discount-left-time">
+                    <div class="discount-left-time-specific">
+                      <span>559</span>
+                      <span>DAYS</span>
+                    </div>
+                    <div class="discount-left-time-specific">
+                      <span>13</span>
+                      <span>HRS</span>
+                    </div>
+                    <div class="discount-left-time-specific">
+                      <span>56</span>
+                      <span>MINS</span>
+                    </div>
+                    <div class="discount-left-time-specific">
+                      <span>30</span>
+                      <span>SECS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shop-actions-product">
+                <div class="shop-actions-product-image-container">
+                  <img src="/images/couch.jpeg"/>
+                </div>
+                <div class="shop-actions-product-container">
+                  <div class="price-discount">
+                    <span>$70.00</span>
+                    <span>$80.00</span>
+                  </div>
+                  <p>Divan blu dyvendesh</p>
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="product-inventory">
+                    <span>Available: 369</span>
+                    <span>Unit Sold: 56</span>
+                    <div class="product-inventory-bar">
+                      <div class="product-inventory-bar-able">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="discount-left-time">
+                    <div class="discount-left-time-specific">
+                      <span>559</span>
+                      <span>DAYS</span>
+                    </div>
+                    <div class="discount-left-time-specific">
+                      <span>13</span>
+                      <span>HRS</span>
+                    </div>
+                    <div class="discount-left-time-specific">
+                      <span>56</span>
+                      <span>MINS</span>
+                    </div>
+                    <div class="discount-left-time-specific">
+                      <span>30</span>
+                      <span>SECS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shop-actions-product">
+                <div class="shop-actions-product-image-container">
+                  <img src="/images/couch.jpeg"/>
+                </div>
+                <div class="shop-actions-product-container">
+                  <div class="price-discount">
+                    <span>$70.00</span>
+                    <span>$80.00</span>
+                  </div>
+                  <p>Divan blu dyvendesh</p>
+                  <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="product-inventory">
+                    <span>Available: 369</span>
+                    <span>Unit Sold: 56</span>
+                    <div class="product-inventory-bar">
+                      <div class="product-inventory-bar-able">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="discount-left-time">
+                    <div class="discount-left-time-specific">
+                      <span>559</span>
+                      <span>DAYS</span>
+                    </div>
+                    <div class="discount-left-time-specific">
+                      <span>13</span>
+                      <span>HRS</span>
+                    </div>
+                    <div class="discount-left-time-specific">
+                      <span>56</span>
+                      <span>MINS</span>
+                    </div>
+                    <div class="discount-left-time-specific">
+                      <span>30</span>
+                      <span>SECS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="shop-actions-categories">
@@ -199,10 +394,60 @@
         </div>
         <div class="footer-container">
           <div class="footer-navigation">
-            <div class="footer-navigation-item"></div>
-            <div class="footer-navigation-item"></div>
-            <div class="footer-navigation-item"></div>
-            <div class="footer-navigation-item"></div>
+            <div class="footer-navigation-information">
+              <p>Contact Us</p>
+              <div class="footer-navigation-address">
+                <i class="fa-solid fa-house-chimney-window"></i>
+                <span>45 Grand Central New York NY&nbsp; <br> 1017 United State USA</span><br>
+                <span></span>
+              </div>
+              <div class="footer-navigation-address">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email: info@yordomain.com</span>
+              </div>
+              <div class="footer-navigation-address">
+                <i class="fa-solid fa-phone"></i>
+                <span>Phone: (+123) 123 312 321</span>
+              </div>
+              <div class="footer-navigation-address">
+                <i class="fa-solid fa-fax"></i>
+                <span>Fax: (+123) 123 321 321</span>
+              </div>
+              <div class="footer-navigation-address">
+                <i class="fa-solid fa-house-chimney-window"></i>
+                <span>Mon-Sat 9.00pm - 5.00pm.&nbsp <br>Sun: Closed</span><br>
+                <span></span>
+              </div>
+            </div>
+            <div class="footer-navigation-information">
+              <p>Information</p>
+              <span>Contact</span>
+              <span>About Us</span>
+              <span>Privacy Policy</span>
+              <span>Costumer Service</span>
+              <span>Frequently Questions</span>
+              <span>Delivery Information</span>
+              <span></span>
+            </div>
+            <div class="footer-navigation-information">
+              <p>My Account</p>
+              <span>Cart</span>
+              <span>Wishlist</span>
+              <span>Chechokut</span>
+              <span>FAQ</span>
+              <span>My Account</span>
+              <span>Privacy Policy</span>
+              <span></span>
+            </div>
+            <div class="footer-navigation-information">
+              <div class="footer-navigation-description">
+                <p>Latest tweets</p>
+                <p>Packed with ideas, inspiration and just fuq pictures of cute cat,
+                  it can be hard to stand out in a sea of graphics on
+                  <a href="/">@Pinteres.</a> Which is we are here to help with these
+                  awesome templates.<a href="/">enva.to/r6.</a> </p>
+              </div>
+            </div>
           </div>
           <div class="footer-info">
             <div class="social-media"></div>
