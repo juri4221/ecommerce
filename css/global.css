@@ -134,6 +134,12 @@ button {
     border-radius: 40px;
 }
 
+.search-button{
+    color: #333333;
+}
+
+
+
 .search-box input{
     border: none;
     width: 312px;
@@ -170,7 +176,13 @@ button {
     padding-left: 24px;
 }
 
+.like-button{
+    color: black;
+}
 
+.like-button:hover{
+    transform: scale(1.1);
+}
 
 .shopping-cart-total-price{
     margin: 8px 0 0;
@@ -285,23 +297,22 @@ button {
     display: flex;
 }
 
-.page-content-navigation-department{
+.page-content-department-button{
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 32px;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #554E32;
+    text-decoration: none;
     height: 60px;
-    width: 270px;
     background-color: #FAD234;
     border-top-right-radius: 24px;
     border-top-left-radius: 24px;
 }
 
-.page-content-department{
-    gap: 8px;
-    font-size: 15px;
-    font-weight: bold;
-    display: flex;
-    margin-left: 16px;
-    margin-top: 22px;
-    justify-content: flex-start;
-}
 
 .page-content-navigation-bar{
     display: flex;
@@ -312,12 +323,18 @@ button {
 .page-content-navigation-bar-items{
     margin-right:  16px;
     padding-bottom: 8px;
-    cursor: pointer;
+    text-decoration: none;
+    color: #170501;
+}
+
+.page-content-navigation-bar-items:hover{
+    transform: scale(1.1);
 }
 
 .page-content-navigation-bar-items.selected{
     color: #FAD234;
     border-bottom: 2px solid #FAD234;
+    text-decoration: none;
 }
 
 .page-content-ads{
@@ -377,7 +394,7 @@ button {
 }
 
 .brand-logo-container{
-    padding: 0 16px;
+    padding: 16px 24px;
     height: 96px;
     display: flex;
     align-items: center;
@@ -510,6 +527,10 @@ button {
     gap: 5px;
 }
 
+.shop-now-button:hover{
+    transform: scale(1.1);
+}
+
 .shop-actions-container h2:first-child{
     color: #CD131C;
 }
@@ -607,7 +628,7 @@ h1{
 
 .price-discount span:first-child{
     margin-right: 4px;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: bold;
     color: #CD131C;
 }
@@ -800,6 +821,10 @@ h1{
 .social-media-brands{
     display: flex;
     gap: 20px;
+}
+
+.social-media-button{
+    color: #333333;
 }
 
 .payments-info{
