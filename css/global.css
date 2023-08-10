@@ -21,6 +21,7 @@ button {
     border: none;
     border-radius: 18px;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .header {       
@@ -320,14 +321,15 @@ button {
     gap: 10px;
 }
 
-.page-content-navigation-bar-items{
+.page-content-navigation-bar a{
+    text-decoration: none;
     margin-right:  16px;
     padding-bottom: 8px;
     text-decoration: none;
     color: #170501;
 }
 
-.page-content-navigation-bar-items:hover{
+.page-content-navigation-bar a:hover{
     transform: scale(1.1);
 }
 
@@ -338,6 +340,7 @@ button {
 }
 
 .page-content-ads{
+    margin-top: 30px;
     gap: 30px;
     display: flex;
     justify-content: space-around;
@@ -348,14 +351,55 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    flex: 1;
+    flex: 2;
     position: relative;
     background-color: white;
-    background-image: url("https://placehold.co/600x400");
+    background-image: url(/images/Wood\ Furniture.jpg);
     height: 620px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.page-content-ads-item-console{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-image: url(/images/lamps.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 16px;
+    gap: 4px;
+}
+
+.page-content-ads-item-console.inverted{
+    justify-content: flex-end;
+}
+
+.page-content-ads-item-console i{
+    font-size: 24px;
+    color: #FAD100;
+}
+
+.page-content-ads-item-console p{
+    margin: 0;
+}
+
+.page-content-ads-item-console:last-child{
+    background-image: url(/images/lamp2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.console-name{
+    color: #7B7B7B;
+}
+
+.console-category{
+    color: #333333;
+    font-weight: bold;
 }
 
 .page-content-ads-products{
@@ -560,6 +604,24 @@ h1{
     align-items: center;
 }
 
+.slider-pagination{
+    width: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 16px;
+}
+
+.slider-pagination span{ 
+    background-color: #C0C0C0;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+}
+
+.slider-pagination span.active{
+    background-color: #7B7B7B;
+}
+
 .shop-actions-categories-title{
     font-size: 24px;
     font-weight: normal;
@@ -736,6 +798,7 @@ h1{
 }
 
 .subscribe-container {
+    width: 520px;
     height: 30px;
     display: flex;
     align-items: center;
@@ -774,7 +837,6 @@ h1{
 .footer-navigation-item {
     width: 100%;
     height: 50px;
-    background-color:blue;
 }
 
 .footer-navigation-group{
@@ -786,11 +848,20 @@ h1{
     color: #404040;
 }
 
+.footer-navigation-group a{
+    text-decoration: none;
+    color: #404040;
+
+}
+
 .footer-navigation-group.tweeter-feed{
     justify-content: flex-start;
     flex: 2;
 }
 
+.footer-navigation-group.tweeter-feed a{
+    color: #40B3E6;
+}
 
 .footer-navigation-navigation-contact {
     display: flex;
@@ -799,10 +870,6 @@ h1{
 
 .footer-navigation-navigation-contact .fa-phone{
     color: #404040;
-}
-
-.footer-navigation-group span{
-    cursor: pointer;
 }
 
 .footer-info {
@@ -823,7 +890,7 @@ h1{
     gap: 20px;
 }
 
-.social-media-button{
+.social-media a{
     color: #333333;
 }
 
@@ -838,7 +905,5 @@ h1{
 }
 
 .payments-info-cards img{
-
     width: 40px;
 }
-
