@@ -120,7 +120,6 @@ button {
     margin-right: 13px;
     color: #FAD234;
 }
-
     
 .page-content-header-actions{
     display: flex;
@@ -138,8 +137,6 @@ button {
 .search-button{
     color: #333333;
 }
-
-
 
 .search-box input{
     border: none;
@@ -199,8 +196,6 @@ button {
     z-index: 1;
 }
 
-
-
 .shopping-cart-checkout-button{
     width: 100% !important;
     height: 48px;
@@ -211,7 +206,6 @@ button {
 }
 
 .shopping-cart-container{
-
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -314,7 +308,6 @@ button {
     border-top-left-radius: 24px;
 }
 
-
 .page-content-navigation-bar{
     display: flex;
     align-items: center;
@@ -340,7 +333,6 @@ button {
 }
 
 .page-content-ads{
-    margin-top: 30px;
     gap: 30px;
     display: flex;
     justify-content: space-around;
@@ -354,14 +346,14 @@ button {
     flex: 2;
     position: relative;
     background-color: white;
-    background-image: url(/images/Wood\ Furniture.jpg);
+    background-image: url(/images/wood-furniture.jpg);
     height: 620px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.page-content-ads-item-console{
+.page-content-ads-item-slim{
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -373,33 +365,48 @@ button {
     gap: 4px;
 }
 
-.page-content-ads-item-console.inverted{
+.page-content-ads-item-slim button{
+    background: none;
+}
+
+.page-content-ads-item-slim.inverted{
     justify-content: flex-end;
 }
 
-.page-content-ads-item-console i{
+.page-content-ads-item-slim i{
     font-size: 24px;
     color: #FAD100;
 }
 
-.page-content-ads-item-console p{
+.page-content-ads-item-slim p{
     margin: 0;
 }
 
-.page-content-ads-item-console:last-child{
+.page-content-ads-item-slim:last-child{
     background-image: url(/images/lamp2.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.console-name{
+.shop-actions .hall{
+    background-image: url(/images/lamp7.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-content-item-slim-name{
     color: #7B7B7B;
 }
 
-.console-category{
+.page-content-item-slim-category{
     color: #333333;
     font-weight: bold;
+}
+
+.confirm-button:hover{
+    transform: scale(1.1);
 }
 
 .page-content-ads-products{
@@ -554,13 +561,27 @@ button {
     flex: 1;
     position: relative;
     background-color: white;
-    background-image: url("https://placehold.co/400x400");
+    background-image: url(/images/chairs.jpg);
     height: 200px;
-    background-position: right;
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 130%;
+    background-size: 100%;
     justify-content: center;
     align-items: flex-end;
+}
+
+.shop-actions-item.lamp{
+    background-image: url(/images/desk-lamps-4921049.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+
+.shop-actions-item.chair{
+    background-image: url(/images/chair.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 76%;
 }
 
 .shop-actions-container{
